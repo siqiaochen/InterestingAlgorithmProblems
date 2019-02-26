@@ -1,1 +1,1 @@
-# InterestingAlgorithmProblems
+# Interesting Algorithm Problems
