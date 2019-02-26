@@ -1,15 +1,16 @@
 class Solution {
 	public void nextPermutation(int[] nums){
-		int lind = nums.length-1;
+        if(nums.length < 2) return;
+		int lind = nums.length-2;
 		for(int i = nums.length - 1; i > 0; i --)
 		{
 			if(nums[i]<=nums[i-1])
-				lind = i-1;
+				lind = i-2;
 			else
 				break;
 		}
 		// reverse whole list
-		if(lind == 0)
+		if(lind == -1)
 		{
 			int lo = 0, hi = nums.length-1;
 			while(lo < hi)
@@ -19,7 +20,7 @@ class Solution {
 		}
 		else
 		{
-			int rind = i + 1;
+			int rind = lind + 1;
 			while(rind+1 < nums.length && nums[rind+1] > nums[lind])
 				rind++;
 			swap(nums,lind,rind);
