@@ -7,9 +7,9 @@ index i for the first num not in reverse order.
    - Swap i with j. 
    - Swap the right part of array.
 
-Cases:
-12345
-321
-2134
-432331
-1
+Cases:<br />
+   12345<br />
+   321<br />
+   2134<br />
+   432331<br />
+   1<br />
