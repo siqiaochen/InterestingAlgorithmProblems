@@ -14,7 +14,7 @@ Templete
             else if(nums[mid] < target)
                 lo = mid + 1;
 			else 
-				return mid;
+		return mid;
         }
         return -1;
     }
